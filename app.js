@@ -22,8 +22,8 @@ window.addEventListener('load',() =>{
         samplediv.appendChild(sampleimage);
         const griddiv = document.getElementById("grid");
         griddiv.innerHTML = "";
-        if(stateOfGame>3){
-            griddiv.style.width="90%";
+        if(stateOfGame>2){
+            griddiv.style.width="95%";
 
         }
         const xlen = (2 + stateOfGame)*(2+ stateOfGame);
