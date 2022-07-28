@@ -41,7 +41,7 @@ window.addEventListener("load", () => {
       img: "https://cdn.freecodecamp.org/curriculum/css-photo-gallery/10.jpg",
     },
   ];
-
+  displayscreenstart();
   const startbuttton = document.getElementById("startbutton");
   startbuttton.addEventListener("click", (e) => {
     e.preventDefault();
@@ -60,6 +60,10 @@ window.addEventListener("load", () => {
     samplediv.innerHTML = "";
     const griddiv = document.getElementById("grid");
     griddiv.innerHTML = "";
+    const p = document.createElement("p");
+    p.innerHTML =
+      "<ul><li>You will be shown a sample image at the top.</li><li>Find the sample image in the grid below.</li><li>The grid will be hidden after some time. </li><li>You have to remember the position of the sample and select it</li> <ul>";
+    samplediv.append(p);
   }
   function displayscreen() {
     const startbuttton = document.getElementById("startbutton");
@@ -74,7 +78,7 @@ window.addEventListener("load", () => {
     sampleimage.setAttribute("src", pics[temp].img);
     samplediv.appendChild(sampleimage);
     const p = document.createElement("p");
-    p.innerHTML =
+    p.innerText =
       "Select " + stateOfGame + "  of the above image in the grid below.";
     samplediv.appendChild(p);
     const griddiv = document.getElementById("grid");
