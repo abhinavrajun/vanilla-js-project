@@ -134,9 +134,9 @@ window.addEventListener("load", () => {
 
     for (let i = 0; i < gridpic.length && counttemp > -1; i++) {
       gridpic[i].addEventListener("click", (e) => {
+        gridpic[i].style.opacity = "1";
         if (e.target.src === pics[temp].img) {
           counttemp -= 1;
-          gridpic[i].style.opacity = "1";
           if (counttemp == 0) {
             startbuttton.style.display = "inline";
             console.log("correct");
