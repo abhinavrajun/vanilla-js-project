@@ -73,6 +73,10 @@ window.addEventListener("load", () => {
 
     sampleimage.setAttribute("src", pics[temp].img);
     samplediv.appendChild(sampleimage);
+    const p = document.createElement("p");
+    p.innerHTML =
+      "Select " + stateOfGame + "  of the above image in the grid below.";
+    samplediv.appendChild(p);
     const griddiv = document.getElementById("grid");
     griddiv.innerHTML = "";
     if (stateOfGame > 2) {
