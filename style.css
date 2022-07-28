@@ -25,7 +25,38 @@ h1 {
   object-fit: cover;
   border-radius: 10px;
 }
-.grid img {
+.grid .picdiv {
+  width: 20%;
+  max-width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 2px;
+  border-radius: 10px;
+  padding: 0;
+}
+.grid .picdiv .cover {
+  width: 100%;
+
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+
+  border-radius: 10px;
+  background-color: rgb(32, 201, 46);
+}
+.grid .picdiv input {
+  width: 100%;
+  opacity: 1;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  margin: 0;
+}
+.grid input {
   width: 20%;
   max-width: 100px;
   height: 100px;
